@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Two Numbers</title>
+</head>
+<body>
+    <div class="box">
+        <h2>Addition of Two Numbers</h2>
+
+        <input type="number" id="num1" placeholder="Enter First Number">
+        <input type="number" id="num2" placeholder="Enter Second Number">
+        <br>
+
+        <button onclick="Sum()">Calculate</button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <div class="box">
+        <h2>Subtraction of Two Numbers</h2>
+
+        <input type="number" id="num1" placeholder="Enter First Number">
+        <input type="number" id="num2" placeholder="Enter Second Number">
+        <br>
+
+        <button onclick="Diff()">Calculate</button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <div class="box">
+        <h2>Multiplication of Two Numbers</h2>
+
+        <input type="number" id="num1" placeholder="Enter First Number">
+        <input type="number" id="num2" placeholder="Enter Second Number">
+        <br>
+
+        <button onclick="Product()">Calculate</button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <div class="box">
+        <h2>Division of Two Numbers</h2>
+
+        <input type="number" id="num1" placeholder="Enter First Number">
+        <input type="number" id="num2" placeholder="Enter Second Number">
+        <br>
+
+        <button onclick="Quotient()">Calculate</button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script>
+        function Sum(){
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 = Number(document.getElementById("num2").value);
+            let res_sum = n1 + n2;
+
+            document.getElementById("result").innerHTML = "Result"+ res_sum;
+        } 
+
+         function Diff(){
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 = Number(document.getElementById("num2").value);
+            let res_diff = n1 + n2;
+
+            document.getElementById("result").innerHTML = "Result"+ res_diff;
+        }
+
+         function Product(){
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 = Number(document.getElementById("num2").value);
+            let res_product = n1 + n2;
+
+            document.getElementById("result").innerHTML = "Result"+ res_product;
+        }
+
+         function Quotient(){
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 = Number(document.getElementById("num2").value);
+            let res_quotient = n1 + n2;
+
+            document.getElementById("result").innerHTML = "Result"+ res_quotient;
+        }
+    </script>
+    
+</body>
+</html>
